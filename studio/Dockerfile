@@ -6,9 +6,6 @@ RUN echo "Starting studio.."
 # OS version
 RUN cat /etc/redhat-release
 
-# basic dependencies
-RUN yum install make git wget tar -y
-
 # copy required files to the container
 COPY . /tmp/studio/
 
