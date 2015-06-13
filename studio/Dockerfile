@@ -13,3 +13,6 @@ COPY . /tmp/studio/
 RUN find /tmp/studio/scripts/ -name '*.sh' -exec {} \;
 
 CMD ./tmp/studio/bin/start.sh
+
+# docker build -t="jordifebrer/studio" .
+# docker run -d -p 8080:8080 -v $(echo $WORKSPACE)/dist:/tmp/studio/dist jordifebrer/studio

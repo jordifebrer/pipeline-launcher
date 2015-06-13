@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # basic dependencies
-yum install make git wget tar -y
+yum install make git wget vim tar -y
